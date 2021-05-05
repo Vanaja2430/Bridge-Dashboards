@@ -4,15 +4,90 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Info PBA</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Bridge Global Dashboard</title>
+    <link rel="stylesheet" href="style.css" />    
+    <link rel="stylesheet" href="Daily Info PBA.css" />    
   </head>
   <body>
-    <header>
-      <h1>Daily Info PBA</h1>
-    </header>
-
-    <a href="Index.html">Home</a>
-    <footer></footer>
+    <h1 class="header">
+      Bridge Global Dashboard
+    </h1>
+    <div>
+        <ul class="breadcrumb">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="PBA.html"class="active">PBA</a></li>
+            <li>Daily Info PBA</li>
+        </ul>          
+    </div>
+    <div class="main">          
+      <div class="testbox">
+          <form action="/">
+            <div class="banner">
+              <h1>Daily Info PBA</h1>
+            </div>
+            <div class="item">
+              <p>Date</p>
+              <input type="date" name="pdate" />
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="item">
+              <p>Time</p>
+              <input type="time" name="name" />
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="item">  
+              <p>Bridge Account</p>
+              <select>
+                <option value=""></option>
+                <option value="1">*Please select*</option>
+                <option value="2">Akzo</option>
+                <option value="3">DLL</option>
+                <option value="4">Philips</option>
+                <option value="5">WSP</option>
+                <option value="5">T-Mobile</option>
+              </select>
+            </div>
+            <div>
+              <p style="font-weight: bold;">Screenprints</p><br>
+              <p>EDPP Dashboard</p>
+              <input type="file" id="myFile" name="filename">
+              <input type="submit"><br>
+              <p>Paladin Dashboard</p>
+              <input type="file" id="myFile" name="filename">
+              <input type="submit"><br>
+            </div>
+            <div class="item">
+              <p>Info PBA Update</p>
+              <textarea rows="3" >Talk Talkers-Actions Initiated:</textarea>
+            </div>
+            <div class="item">
+              <p>Next Update Date</p>
+              <input type="date" name="pdate" />
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="item">
+              <p>Next Update Time</p>
+              <input type="time" name="name" />
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="item">
+              <p>Incident Manager</p>
+              <input type="text" name="name"/>
+            </div>
+            <div class="item">
+              <p>Mail Signature</p>
+              <input type="text" name="name"/>
+            </div>
+            
+            <div class="btn-block">
+              <button type="submit" href="/">SEND</button>
+            </div>
+          </form>
+      </div>
+    </div>
+    <div class="footer">
+        <div>Atos Bridge &copy</i></div>
+    </div>
+    
   </body>
 </html>

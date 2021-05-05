@@ -5,23 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bridge Global Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />    
+    <link rel="stylesheet" href="support.css" />    
   </head>
   <body>
-    <header>
-      <div class="header">
-        <h1>Support</h1>
+    <h1 class="header">Bridge Global Dashboard</h1>
+     <div class="navbar">        
+        <a href="index.html" >Home</a>
+        <a href="PBA.html">PBA</a>
+        <a href="OPOM.html">OPOM</a>
+        <a href="EDPP.html">EDPP</a>
+        <a href="Paladin.html">Paladin</a>
+        <a href="Documents.html">WI-Library</a>
+        <a href="Support.html" class="right active">Support</a>
       </div>
-    </header>
-    <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="PBA.html">PBA</a>
-      <a href="OPOM.html">OPOM</a>
-      <a href="EDPP.html">EDPP</a>
-      <a href="Paladin.html">Paladin</a>
-      <a href="Support.html" class="active" class="right">Support</a>
-    </div>
+      <div class="main">
+        <p>Support</p>
+        
+        <div class="container">
+          <form action="action_page.php">
+            
+                      
+            <label for="bridge tool">Bridge Tool</label>
+            <select id="bridge tool" name="Bridge Tool">
+              <option value="paladin">Paladin</option>
+              <option value="edpp">EDPP</option>
+              <option value="pba">PBA</option>
+              <option value="opom">OPOM</option>
+              <option value="wilibrary">WI-Library</option>
+              <option value="other">Other</option>
+            </select>
+            
+            <label for="issue">Issue Description</label>
+            <textarea id="subject" name="subject" placeholder="Describe the issue..." style="height:200px"></textarea>
+            
+            <div class="fileupload">
+                            
+              <input type="file" id="myFile" name="filename">
+              <input type="submit" value="Screenprint 1"><br>
+              <br>
+              <input type="file" id="myFile" name="filename">
+              <input type="submit" value="Screenprint 2"><br>
+            </div><br>
 
-    <footer></footer>
+            <input type="submit" value="Submit">
+            <p>
+              Or email 
+              <a href="mailto:bridge-tooling@atos.net">bridge.tooling@atos.net</a>
+            </p>
+            
+          </form>
+        </div>
+      </div>
+        <div class="footer">
+        <div>Atos Bridge &copy</i></div>
+      </div>
+    </div>
   </body>
 </html>

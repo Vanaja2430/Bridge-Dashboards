@@ -5,23 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bridge Global Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />    
+    <link rel="stylesheet" href="pba.css" />    
   </head>
   <body>
-    <header>
-      <div class="header">
-        <h1>PBA</h1>
+    <h1 class="header">Bridge Global Dashboard</h1>
+     <div class="navbar">        
+        <a href="index.html" >Home</a>
+        <a href="PBA.html"class="active">PBA</a>
+        <a href="OPOM.html">OPOM</a>
+        <a href="EDPP.html">EDPP</a>
+        <a href="Paladin.html">Paladin</a>
+        <a href="Documents.html">WI-Library</a>
+        <a href="Support.html" class="right">Support</a>
       </div>
-    </header>
-    <div class="navbar">
-      <a href="index.html">Home</a>
-      <a href="PBA.html" class="active">PBA</a>
-      <a href="OPOM.html">OPOM</a>
-      <a href="EDPP.html">EDPP</a>
-      <a href="Paladin.html">Paladin</a>
-      <a href="Support.html" class="right">Support</a>
+      <div class="main">
+          <a href="Daily Info PBA.html" class="btn"><button style="width:auto;">Create New Daily Info PBA</button></a><br>
+          <table>
+            <thead>
+              <tr>
+                <th>PBA</th>
+                <th>Account</th>
+                <th>Start Date</th>
+                <th>Status</th>
+                <th>PBA Summary</th>
+                <th>PBA Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="PBA">Daily Info PBA - SOD</td>
+                <td data-label="Account">WSP</td>
+                <td data-label="StartDate">05/03/2021 8:00 EST</td>
+                <td data-label="Status">Monitoring</td>
+                <td data-label="Summary">Daily Info PBA - SOD Dashboard Status</td>
+                <td data-label="Actions"><a href="PBAUpdate.html">View-Update</a></td>
+              </tr>
+              <tr>
+                <td data-label="PBA">Daily Info PBA - SOD</td>
+                <td data-label="Account">Philips</td>
+                <td data-label="StartDate">05/04/2021 9:00 IST</td>
+                <td data-label="Status">Monitoring</td>
+                <td data-label="Summary">Daily Info PBA - SOD Dashboard Status</td>
+                <td data-label="Actions"><a href="PBAUpdate.html">View-Update</a></td>                
+              </tr>
+            </tbody>
+          </table>             
+      </div>
+      <div class="footer">
+        <div>Atos Bridge &copy</i></div>
+      </div>
     </div>
-
-    <footer></footer>
   </body>
 </html>
